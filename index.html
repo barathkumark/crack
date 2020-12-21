@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Barathkumar</title>
+    <!-- MDB icon -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 20vw;
+        }
+
+        .intro-bg {
+            background-image: url('img/Bg5.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 48vw;
+        }
+
+        .arrow-size {
+            margin-top: 16vw;
+            margin-left: 46vw;
+            height: 3vw;
+        }
+
+        .main-heading {
+            font-family: roboto;
+            font-weight: bold;
+            color: whitesmoke;
+            font-size: 50px;
+        }
+
+        .main-desc {
+            font-family: roboto;
+            font-weight: bolder;
+            color: rgb(211, 209, 209);
+            font-size: 25px;
+        }
+
+        .section1 {
+            background-color: #252525;
+        }
+
+        .section2 {
+            background-color: #2f2f2f;
+        }
+
+        .sub-heading {
+            font-family: system-ui;
+            font-weight: bold;
+            color: white;
+            font-size: 32px;
+        }
+
+        .sub-desc {
+            font-family: sans-serif;
+            font-weight: bolder;
+            color: rgb(211, 209, 209);
+            font-size: 15px;
+        }
+
+
+        .card-heading {
+            font-family: system-ui;
+            font-weight: bold;
+            color: whitesmoke;
+            font-size: 23px;
+        }
+
+        .progress-heading {
+            font-family: system-ui;
+            font-weight: bold;
+            color: whitesmoke;
+            font-size: 13px;
+        }
+
+        .blue-bar {
+            background-color: #17bed2;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .zoom {
+            transition: transform .2s;
+            width: 225px;
+            height: 230px;
+            background-color: #252525;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);            
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.1);
+            /* IE 9 */
+            -webkit-transform: scale(1.1);
+            /* Safari 3-8 */
+            transform: scale(1.1);
+            background-color: #17bed2;        
+
+        }
+
+        #background {
+            position: absolute;
+            z-index: 0;
+            display: block;
+            min-width: 50%;
+        }
+
+        #bg-introtext {
+            color: rgb(189, 187, 187);
+            font-size: 60px;
+            margin-left: 20.5vw;
+            font-family: sans-serif;
+            font-weight: 800;
+            opacity: 10%;
+        }
+
+        #bg-experiencetext {
+            color: rgb(189, 187, 187);
+            font-size: 60px;
+            margin-left: 9%;
+            font-family: sans-serif;
+            font-weight: 800;
+            opacity: 10%;
+        }
+
+        #bg-worktext {
+            color: rgb(189, 187, 187);
+            font-size: 60px;
+            margin-left: 39%;
+            font-family: sans-serif;
+            font-weight: 800;
+            opacity: 10%;
+        }
+
+        #bg-contacttext {
+            color: rgb(189, 187, 187);
+            font-size: 60px;
+            margin-left: 25%;
+            font-family: sans-serif;
+            font-weight: 800;
+            opacity: 10%;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!--Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <a class="navbar-brand" href="#">My Resume</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent-555" aria-controls="navbarSupportedContent-555"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item avatar">
+                        <a class="nav-link p-0" href="#">
+                            <img src="img/MyImg.jpg" class="rounded-circle z-depth-0" alt="my-image" height="50">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--/.Navbar -->
+    <main>
+
+
+        <!-- Intro Section -->
+        <section class="intro-bg">
+            <div id="home">
+                <div class="vertical-center pl-5">
+                    <h1 class="main-heading">
+                        BARATH KUMAR</h1>
+                    <p class="main-desc">
+                        Web Developer</p>
+                    <a href="#about">
+                        <img class="img-fluid arrow-size animated bounce infinite" src="img/Arrow.png" alt="Arrow"></a>
+                </div>
+            </div>
+        </section>
+        <!-- /Intro Section -->
+
+        <!-- About -->
+
+        <section class="section1 py-5">
+            <div id="about">
+                <div id="background">
+                    <p id="bg-introtext">Intro</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 my-5 text-sm-right text-left pr-5">
+                            <h3 class="sub-heading">Intro</h3>
+                            <p class="sub-desc">What I am all about.</p>
+                        </div>
+                        <div class="col-sm-8 my-5">
+                            <p class="sub-desc">
+                                I'm Barathkumar, My areas of interest include Web Development.Apart form this I did some
+                                self projects for
+                                learning purpose. I am a beginner in web-development with a little experience in
+                                HTML/CSS.
+                            </p>
+                            <p class="sub-desc">
+                                I want to join in your projects to get more experience and to have anopportunity to take
+                                part in creating
+                                things. I am always hungry for new challenges and innovations.Feel free to take a look
+                                at my latest
+                                projects on the web portfolio page.
+                            </p>
+                            <p class="sub-desc">
+                                I'm quietly confident, naturally curious, and perpetually improving my chops.
+                            </p>
+                            <p class="sub-desc">
+                                My journey as a designer started already at the age 18. After that I got my bachelor
+                                degree in Computer
+                                Science Engineering. And I develope my range of knowledge and gather experiences through
+                                my self
+                                learning.Fast forward few years, I’m now focusing on product design, management, and
+                                advising.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /About -->
+
+        <!-- Experience -->
+        <section class="section2 py-5">
+            <div id="experience">
+                <div id="background">
+                    <p id="bg-experiencetext">Experience</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 text-sm-right text-left my-5 pr-5">
+                            <h3 class="sub-heading">Experience</h3>
+                        </div>
+                        <div class="col-sm-8 my-5">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card-heading">Web Design
+                                        Tools I Use</div>
+                                    <p class="sub-desc">
+                                        These are my favorite resources even and some of my skills though I have many
+                                        more in my arsenal.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row my-3">
+                                <div class="col-sm-4">
+                                    <div class="zoom">
+                                        <div class="card-body">
+                                            <i class="fab fa-html5 fa-2x white-text"></i>
+                                            <div class="card-heading my-3">HTML5</div>
+                                            <p class="sub-desc white-text">I have knowledge about HTML5 to create
+                                                amazing websites.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="zoom">
+                                        <div class="card-body">
+                                            <i class="fab fa-bootstrap fa-2x white-text"></i>
+                                            <div class="card-heading my-3">Bootstrap4</div>
+                                            <p class="sub-desc">I have good knowledge about bootstrap4 for
+                                                creating a
+                                                responsive websites.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="zoom">
+                                        <div class="card-body">
+                                            <i class="fab fa-adobe fa-2x white-text"></i>
+                                            <div class="card-heading my-3">Adobe XD</div>
+                                            <p class="sub-desc">I use XD to create wonderful
+                                                UX designs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-sm-12">
+                                    <div class="progress-heading mt-2">HTML5 <span class="float-right">70%</span></div>
+                                    <div class="progress mt-3" style="height: 3px;">
+                                        <div class="progress-bar blue-bar" role="progressbar" style="width: 70%;"
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 my-2">
+                                    <div class="progress-heading mt-2">CSS <span class="float-right">70%</span></div>
+                                    <div class="progress mt-3" style="height: 3px;">
+                                        <div class="progress-bar blue-bar" role="progressbar" style="width: 70%; "
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="progress-heading mt-2">JavaScript <span class="float-right">50%</span>
+                                    </div>
+                                    <div class="progress mt-3" style="height: 3px;">
+                                        <div class="progress-bar blue-bar" role="progressbar" style="width: 50%; "
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 my-2">
+                                    <div class="progress-heading mt-2">Bootstrap4<span class="float-right">70%</span>
+                                    </div>
+                                    <div class="progress mt-3" style="height: 3px;">
+                                        <div class="progress-bar blue-bar" role="progressbar" style="width: 70%; "
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="progress-heading mt-2">MDBootstrap <span class="float-right">60%</span>
+                                    </div>
+                                    <div class="progress mt-3" style="height: 3px;">
+                                        <div class="progress-bar blue-bar" role="progressbar" style="width: 60%; "
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 my-2">
+                                    <div class="progress-heading mt-2">Photoshop <span class="float-right">50%</span>
+                                    </div>
+                                    <div class="progress mt-3" style="height: 3px;">
+                                        <div class="progress-bar blue-bar" role="progressbar" style="width: 50%; "
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <div class="progress-heading mt-2">XD <span class="float-right">60%</span></div>
+                                    <div class="progress mt-3" style="height: 3px;">
+                                        <div class="progress-bar blue-bar" role="progressbar" style="width: 60%; "
+                                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- /Exoerience -->
+
+        <!-- Work -->
+        <section class="section1 py-5">
+            <div id="work">
+                <div id="background">
+                    <p id="bg-worktext">Work</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 text-sm-right text-left my-5 pr-5">
+                            <h3 class="sub-heading">Work</h3>
+                            <p class="sub-desc">I build the real value.</p>
+                        </div>
+                        <div class="col-sm-8 my-5">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--/ Work -->
+
+        <!-- Contact -->
+        <section class="section2 py-4" style="height: 200px;">
+            <div id="contact">
+                <div id="background">
+                    <p id="bg-contacttext">Contact</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4 text-sm-right text-left my-5 pr-5">
+                            <h3 class="sub-heading">Contact</h3>
+                            <p class="sub-desc">Get in touch.</p>
+                        </div>
+                        <div class="col-sm-8 my-5">
+                            <div class="row mt-2">
+                                <div class="col-sm-4">
+                                    <div class="progress-heading"><i class="fas fa-mobile fa-lg pr-1"></i>Phone</div>
+                                    <p class="sub-desc">+91 9442383143</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="progress-heading"><i class="fas fa-envelope fa-lg pr-1"></i>E-Mail</div>
+                                    <p class="sub-desc">kbarath3694@gmail.com</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="progress-heading"><i
+                                            class="fas fa-map-marker-alt fa-lg pr-1"></i>Location</div>
+                                    <p class="sub-desc">Salem,Tamilnadu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /Contact -->
+
+        <!-- Footer -->
+        <footer class="footer section1 py-2">
+            <div class="progress-heading white-text">By Barathkumar</div>
+        </footer>
+        <!-- Footer -->
+
+    </main>
+
+    <!-- End your project here-->
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript"></script>
+
+</body>
+
+</html>
