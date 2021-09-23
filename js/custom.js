@@ -1,3 +1,5 @@
+// Navbar JS
+
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if(scroll < 300){
@@ -7,3 +9,12 @@ $(window).scroll(function(){
     }
 });
 
+
+// Multiply
+
+function multiply(){
+	num1 = document.getElementById("p1").value;
+	num2 = document.getElementById("q1").value;
+	result = num1 * num2;
+	document.getElementById("result").value = result;
+}
