@@ -18,3 +18,22 @@ function multiply(){
 	result = num1 * num2;
 	document.getElementById("result").value = result;
 }
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+
+//   Fix-top
+
+var elementPosition = $('#navigation').offset();
+
+$(window).scroll(function(){
+        if($(window).scrollTop() > elementPosition.top){
+              $('#navigation').css('position','fixed').css('top','0');
+        } else {
+            $('#navigation').css('position','static');
+        }    
+});
