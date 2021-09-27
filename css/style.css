@@ -83,6 +83,9 @@ color: white;
     border: 2px solid #2196f3;
 }
 
+.w-150 {
+    width: 150px;
+}
 .h-600px {
     height: 600px;
 }

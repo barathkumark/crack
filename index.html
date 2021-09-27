@@ -207,8 +207,8 @@
                                 <th> PRODUCT IMAGE </th>
                                 <th> PRODUCT NAME(ITEMS) </th>
                                 <th> PRICE </th>
-                                <th> QTY </th>
-                                <th> SUB-TOTAL </th>
+                                <th class="w-150"> QTY </th>
+                                <th class="w-150"> SUB-TOTAL </th>
                             </tr>
                             <tr class="first odd">
                                 <td colspan="2" class="quick-cat-name last">
@@ -217,8 +217,9 @@
                             </tr>
                             <tr class="mat-header-cell">
                                 <td class="pt-4">1</td>
-                                <td> <a href="" data-toggle="modal" data-target="#basicExampleModal"> <img
-                                            src="img/top1.png" class="img-fluid gpay-icon">
+                                <td class="text-center"> <a href="" data-toggle="modal"
+                                        data-target="#basicExampleModal"> <img src="img/top1.png"
+                                            class="img-fluid gpay-icon bg-white border">
                                         <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -243,67 +244,123 @@
                                         </div>
                                     </a></td>
                                 <td class="pt-4"> Bobby gold 7cm(10pcs) </td>
-                                <td class="pt-4">15.00</td>
+                                <td class="pt-4" id="price1">15.00</td>
                                 <td class="">
-                                    <div class="def-number-input number-input safari_only">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                            class="minus"></button>
-                                        <input class="quantity" min="0" name="quantity" value="0" type="number">
-                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                            class="plus"></button>
-                                    </div>
+                                    <input type="text" id="qty1" class="form-control">
                                 </td>
-                                <td class="pt-4">0 </td>
-                            </tr>
-                            <tr class="mat-header-cell">
-                                <td class="">fd</td>
-                                <td class=" px-2">
-                                    {nhgj</td>
-                                <td class="px-2">
-                                    cvdsvds
-                                </td>
-                                <td class="px-2">
-                                    vfdv
-                                </td>
-                                <td class="">
-                                    bfd
-                                </td>
-                                <td class="px-2">
-                                    vfs
+                                <td class="pt-3"> <input type="text" id="total1" class="form-control" value="0"
+                                        disabled>
                                 </td>
                             </tr>
                             <tr class="mat-header-cell">
-                                <td class="">fd</td>
-                                <td class=" px-2">
-                                    {nhgj</td>
-                                <td class="px-2">
-                                    cvdsvds
-                                </td>
-                                <td class="px-2">
-                                    vfdv
-                                </td>
+                                <td class="pt-4">2</td>
+                                <td class="text-center"> <a href="" data-toggle="modal"
+                                        data-target="#basicExampleModal"> <img src="img/top1.png"
+                                            class="img-fluid gpay-icon bg-white border">
+                                        <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <div class="navbar-font" id="exampleModalLabel">Bobby gold
+                                                            7cm(10pcs)</div>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="img/top1.png" class="img-fluid">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-md btn-primary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></td>
+                                <td class="pt-4"> Bobby gold 7cm(10pcs) </td>
+                                <td class="pt-4" id="price2">32.00</td>
                                 <td class="">
-                                    bfd
+                                    <input type="text" id="qty2" class="form-control">
                                 </td>
-                                <td class="px-2">
-                                    vfs
+                                <td class="pt-3"> <input type="text" id="total2" class="form-control" value="0"
+                                        disabled>
                                 </td>
                             </tr>
                             <tr class="mat-header-cell">
-                                <td class="">fd</td>
-                                <td class=" px-2">
-                                    {nhgj</td>
-                                <td class="px-2">
-                                    cvdsvds
-                                </td>
-                                <td class="px-2">
-                                    vfdv
-                                </td>
+                                <td class="pt-4">3</td>
+                                <td class="text-center"> <a href="" data-toggle="modal"
+                                        data-target="#basicExampleModal"> <img src="img/top1.png"
+                                            class="img-fluid gpay-icon bg-white border">
+                                        <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <div class="navbar-font" id="exampleModalLabel">Bobby gold
+                                                            7cm(10pcs)</div>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="img/top1.png" class="img-fluid">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-md btn-primary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></td>
+                                <td class="pt-4"> Bobby gold 7cm(10pcs) </td>
+                                <td class="pt-4" id="price3">75.00</td>
                                 <td class="">
-                                    bfd
+                                    <input type="text" id="qty3" class="form-control">
                                 </td>
-                                <td class="px-2">
-                                    vfs
+                                <td class="pt-3"> <input type="text" id="total3" class="form-control" value="0"
+                                        disabled>
+                                </td>
+                            </tr>
+                            <tr class="mat-header-cell">
+                                <td class="pt-4">4</td>
+                                <td class="text-center"> <a href="" data-toggle="modal"
+                                        data-target="#basicExampleModal"> <img src="img/top1.png"
+                                            class="img-fluid gpay-icon bg-white border">
+                                        <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <div class="navbar-font" id="exampleModalLabel">Bobby gold
+                                                            7cm(10pcs)</div>
+                                                        <button type="button" class="close" data-dismiss="modal"
+                                                            aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <img src="img/top1.png" class="img-fluid">
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-md btn-primary"
+                                                            data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a></td>
+                                <td class="pt-4"> Bobby gold 7cm(10pcs) </td>
+                                <td class="pt-4" id="price4">145.00</td>
+                                <td class="">
+                                    <input type="text" id="qty4" class="form-control">
+                                </td>
+                                <td class="pt-3"> <input type="text" id="total4" class="form-control" value="0"
+                                        disabled>
                                 </td>
                             </tr>
                         </table>
@@ -490,6 +547,54 @@
     <script type="text/javascript"></script>
 
     <script type="text/javascript" src="js/custom.js"></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#price1, #qty1").keyup(function () {
+                var total = 0;
+                let price = x;
+                var x = 15;
+                var y = Number($("#qty1").val());
+                var total = x * y;
+
+                $('#total1').val(total);
+            });
+        });
+        $(document).ready(function () {
+            $("#price2, #qty2").keyup(function () {
+                var total = 0;
+                let price = x;
+                var x = 32;
+                var y = Number($("#qty2").val());
+                var total = x * y;
+
+                $('#total2').val(total);
+            });
+        });
+        $(document).ready(function () {
+            $("#price3, #qty3").keyup(function () {
+                var total = 0;
+                let price = x;
+                var x = 75;
+                var y = Number($("#qty3").val());
+                var total = x * y;
+
+                $('#total3').val(total);
+            });
+        });
+        $(document).ready(function () {
+            $("#price4, #qty4").keyup(function () {
+                var total = 0;
+                let price = x;
+                var x = 145;
+                var y = Number($("#qty4").val());
+                var total = x * y;
+
+                $('#total4').val(total);
+            });
+        });
+    </script>
 
 </body>
 
