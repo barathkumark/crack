@@ -26,3 +26,13 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
   }
 
+
+  $(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 800) {
+        $('.ScrollToTop').fadeIn();
+    } else {
+        $('.ScrollToTop').fadeOut();
+    }
+
+});

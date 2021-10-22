@@ -132,12 +132,21 @@ table th {
     background: white;
 }
 
-.ScrollToTop {
+/* .ScrollToTop {
     text-decoration: none;
     position: fixed;
     outline: none;
     bottom: 10px;
     right: 10px;
+} */
+
+.ScrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: background 0.8s;
+    z-index: 11;
 }
 
 #btnScrollToTop {
